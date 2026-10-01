@@ -1,0 +1,1238 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Trang-1" id="LSPfy3cWdUz5-G8QVsbD">
+    <mxGraphModel dx="1030" dy="608" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" mermaidData="{&#xa;  &quot;data&quot;: &quot;flowchart TD\n  A[\&quot;Bài tập: Phát hiện và tối ưu hóa đặc tả SRS bị lỗi\&quot;] --&gt; B[\&quot;Mục tiêu\&quot;]\n  A --&gt; C[\&quot;Bối cảnh\&quot;]\n  A --&gt; D[\&quot;Phân tích lỗi\&quot;]\n  A --&gt; E[\&quot;Đặc tả SRS mới\&quot;]\n  A --&gt; F[\&quot;Kiểm chứng và nộp bài\&quot;]\n\n  B --&gt; B1[\&quot;Nhận diện lỗi theo IEEE 830-1998\&quot;]\n  B --&gt; B2[\&quot;Đánh giá Unambiguous\&quot;]\n  B --&gt; B3[\&quot;Đánh giá Verifiable\&quot;]\n  B --&gt; B4[\&quot;Đánh giá Complete\&quot;]\n  B --&gt; B5[\&quot;Chuyển câu cảm tính thành yêu cầu định lượng\&quot;]\n\n  C --&gt; C1[\&quot;RikkeiLogistics\&quot;]\n  C1 --&gt; C2[\&quot;Phân hệ tiếp nhận yêu cầu vận chuyển bưu kiện\&quot;]\n  C2 --&gt; C3[\&quot;Bản thảo bị QA từ chối\&quot;]\n  C3 --&gt; C4[\&quot;Thiếu chỉ số kỹ thuật\&quot;]\n  C3 --&gt; C5[\&quot;Đặt sai mục IEEE 830\&quot;]\n\n  D --&gt; D1[\&quot;Lỗi 1: Sai vị trí chương mục\&quot;]\n  D --&gt; D2[\&quot;Lỗi 2: Không Unambiguous\&quot;]\n  D --&gt; D3[\&quot;Lỗi 3: Không Verifiable\&quot;]\n  D --&gt; D4[\&quot;Lỗi 4: Không Complete\&quot;]\n\n  D1 --&gt; D1a[\&quot;Định nghĩa COD và bưu kiện hỏa tốc đặt tại 2.4 Constraints\&quot;]\n  D1 --&gt; D1b[\&quot;Sửa: chuyển sang 1.3 Definitions\&quot;]\n  D1 --&gt; D1c[\&quot;Tiêu chí: không còn định nghĩa trong 2.4\&quot;]\n\n  D2 --&gt; D2a[\&quot;REQ-01: đẹp mắt, hài hòa, dễ dùng\&quot;]\n  D2 --&gt; D2b[\&quot;REQ-02: siêu nhanh, làm khách hài lòng\&quot;]\n  D2 --&gt; D2c[\&quot;REQ-03: chuyển ngay đến kho đích\&quot;]\n  D2 --&gt; D2d[\&quot;REQ-04: nếu thấy cần thiết\&quot;]\n  D2 --&gt; D2e[\&quot;Sửa: dùng điều kiện, ngưỡng và hành vi cụ thể\&quot;]\n\n  D3 --&gt; D3a[\&quot;Thiếu thời gian phản hồi\&quot;]\n  D3 --&gt; D3b[\&quot;Thiếu tải đồng thời\&quot;]\n  D3 --&gt; D3c[\&quot;Thiếu tiêu chí giao diện\&quot;]\n  D3 --&gt; D3d[\&quot;Thiếu kết quả kiểm thử\&quot;]\n  D3 --&gt; D3e[\&quot;Sửa: quy định giây, mili-giây, số lượng và tỷ lệ\&quot;]\n\n  D4 --&gt; D4a[\&quot;Thiếu kiểm tra cân nặng và kích thước\&quot;]\n  D4 --&gt; D4b[\&quot;Thiếu giới hạn tải trọng\&quot;]\n  D4 --&gt; D4c[\&quot;Thiếu xử lý đường truyền chập chờn\&quot;]\n  D4 --&gt; D4d[\&quot;Thiếu chống trùng mã vận đơn\&quot;]\n  D4 --&gt; D4e[\&quot;Sửa: bổ sung validation và Idempotency Key\&quot;]\n\n  E --&gt; E1[\&quot;1.3 Definitions\&quot;]\n  E --&gt; E2[\&quot;2.4 Design Constraints\&quot;]\n  E --&gt; E3[\&quot;3.2 Functional Requirements\&quot;]\n  E --&gt; E4[\&quot;3.3 Performance Requirements\&quot;]\n  E --&gt; E5[\&quot;3.4 Usability Requirements\&quot;]\n  E --&gt; E6[\&quot;3.5 Audit and Reliability Requirements\&quot;]\n\n  E1 --&gt; E1a[\&quot;COD: Cash On Delivery, dịch vụ thu hộ tiền khi giao hàng\&quot;]\n  E1 --&gt; E1b[\&quot;Bưu kiện hỏa tốc: dịch vụ có SLA giao hàng được định nghĩa bằng thời hạn cụ thể\&quot;]\n\n  E2 --&gt; E2a[\&quot;Xe máy: tải trọng tối đa 50 kg\&quot;]\n  E2 --&gt; E2b[\&quot;Xe tải: tải trọng tối đa 500 kg\&quot;]\n  E2 --&gt; E2c[\&quot;Mã vận đơn phải duy nhất\&quot;]\n  E2 --&gt; E2d[\&quot;Tạo đơn phải hỗ trợ Idempotency Key\&quot;]\n\n  E3 --&gt; R1[\&quot;REQ-INTAKE-01: Kiểm tra dữ liệu đơn hàng\&quot;]\n  R1 --&gt; R1a[\&quot;Cân nặng và kích thước phải lớn hơn 0\&quot;]\n  R1 --&gt; R1b[\&quot;Tổng tải trọng không vượt 50 kg với xe máy\&quot;]\n  R1 --&gt; R1c[\&quot;Tổng tải trọng không vượt 500 kg với xe tải\&quot;]\n  R1 --&gt; R1d[\&quot;Nếu không hợp lệ, hiển thị lỗi cụ thể và không lưu đơn\&quot;]\n  R1 --&gt; R1e[\&quot;Kiểm chứng: nhập 0, số âm và giá trị vượt tải; hệ thống từ chối với thông báo tương ứng\&quot;]\n\n  E3 --&gt; R2[\&quot;REQ-INTAKE-02: Tạo đơn vận chuyển\&quot;]\n  R2 --&gt; R2a[\&quot;Khi người dùng bấm Tạo đơn, hệ thống kiểm tra dữ liệu và tạo mã vận đơn\&quot;]\n  R2 --&gt; R2b[\&quot;Nếu tạo thành công, hiển thị mã vận đơn và trạng thái Đã tiếp nhận\&quot;]\n  R2 --&gt; R2c[\&quot;Không khẳng định chuyển ngay đến kho đích nếu chưa hoàn tất xử lý logistics\&quot;]\n  R2 --&gt; R2d[\&quot;Kiểm chứng: tạo đơn hợp lệ và xác nhận mã vận đơn cùng trạng thái được trả về\&quot;]\n\n  E3 --&gt; R3[\&quot;REQ-INTAKE-03: Chống tạo đơn trùng\&quot;]\n  R3 --&gt; R3a[\&quot;Client gửi Idempotency Key duy nhất cho mỗi thao tác tạo đơn\&quot;]\n  R3 --&gt; R3b[\&quot;Các yêu cầu lặp lại cùng khóa phải trả về cùng kết quả\&quot;]\n  R3 --&gt; R3c[\&quot;Hệ thống không tạo thêm mã vận đơn\&quot;]\n  R3 --&gt; R3d[\&quot;Kiểm chứng: gửi lại cùng yêu cầu 3 lần; chỉ tồn tại 1 đơn và 1 mã vận đơn\&quot;]\n\n  E4 --&gt; P1[\&quot;PER-01: Tra cứu trạng thái\&quot;]\n  P1 --&gt; P1a[\&quot;95 phần trăm yêu cầu phản hồi trong tối đa 2 giây\&quot;]\n  P1 --&gt; P1b[\&quot;99 phần trăm yêu cầu phản hồi trong tối đa 5 giây\&quot;]\n  P1 --&gt; P1c[\&quot;Tải kiểm thử tối thiểu 100 yêu cầu đồng thời\&quot;]\n  P1 --&gt; P1d[\&quot;Kiểm chứng: đo thời gian phản hồi dưới tải 100 yêu cầu đồng thời\&quot;]\n\n  E4 --&gt; P2[\&quot;PER-02: Tạo đơn\&quot;]\n  P2 --&gt; P2a[\&quot;95 phần trăm yêu cầu tạo đơn phản hồi trong tối đa 3 giây\&quot;]\n  P2 --&gt; P2b[\&quot;Hệ thống duy trì tính duy nhất của mã vận đơn\&quot;]\n  P2 --&gt; P2c[\&quot;Kiểm chứng: kiểm thử tải và đối chiếu số đơn với số mã vận đơn\&quot;]\n\n  E5 --&gt; U1[\&quot;USA-01: Giao diện tiếp nhận đơn\&quot;]\n  U1 --&gt; U1a[\&quot;Các trường bắt buộc phải có nhãn rõ ràng\&quot;]\n  U1 --&gt; U1b[\&quot;Thông báo lỗi phải chỉ rõ trường, giá trị không hợp lệ và cách sửa\&quot;]\n  U1 --&gt; U1c[\&quot;Người dùng mới hoàn tất tạo đơn trong tối đa 3 phút ở 4 trên 5 lần thử\&quot;]\n  U1 --&gt; U1d[\&quot;Kiểm chứng: kiểm thử khả dụng với tối thiểu 5 người dùng đại diện\&quot;]\n\n  E6 --&gt; A1[\&quot;AUD-01: Nhật ký kiểm toán\&quot;]\n  A1 --&gt; A1a[\&quot;Ghi nhận tạo đơn, sửa đơn, hủy đơn và tra cứu trạng thái\&quot;]\n  A1 --&gt; A1b[\&quot;Mỗi bản ghi gồm người thực hiện, thời điểm, hành động, mã đơn và kết quả\&quot;]\n  A1 --&gt; A1c[\&quot;Nhật ký không được sửa hoặc xóa bởi người dùng nghiệp vụ\&quot;]\n  A1 --&gt; A1d[\&quot;Kiểm chứng: thực hiện từng hành động và đối chiếu bản ghi đầy đủ\&quot;]\n\n  F --&gt; F1[\&quot;Bảng đối soát 4 lỗi IEEE 830\&quot;]\n  F --&gt; F2[\&quot;Mỗi yêu cầu có mã định danh\&quot;]\n  F --&gt; F3[\&quot;Mỗi yêu cầu có tiêu chí kiểm chứng ngay cạnh\&quot;]\n  F --&gt; F4[\&quot;Định dạng nộp: Markdown .md hoặc Word .docx\&quot;]\n\n\n  class A title\n  class D1,D2,D3,D4,D1a,D2a,D2b,D2c,D2d,D3a,D3b,D3c,D3d,D4a,D4b,D4c,D4d error\n  class E,E1,E2,E3,E4,E5,E6,F section\n  class R1,R2,R3,P1,P2,U1,A1 requirement\n  class R1e,R2d,R3d,P1d,P2c,U1d,A1d,F1,F2,F3,F4 verify\n  class C,C1,C2,C3,C4,C5,B context&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="WAg_OfFaASlJwUKWobgR-1">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Bài tập: Phát hiện và tối ưu hóa đặc tả SRS bị lỗi" mermaidId="n:A" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Bài tập: Phát hiện và tối ưu hóa đặc tả SRS bị lỗi" id="WAg_OfFaASlJwUKWobgR-2">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="415" x="4459" y="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Mục tiêu" mermaidId="n:B" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Mục tiêu" id="WAg_OfFaASlJwUKWobgR-3">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="123" x="440" y="134" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Bối cảnh" mermaidId="n:C" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Bối cảnh" id="WAg_OfFaASlJwUKWobgR-4">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="123" x="1612" y="134" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Phân tích lỗi" mermaidId="n:D" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Phân tích lỗi" id="WAg_OfFaASlJwUKWobgR-5">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="150" x="4592" y="134" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Đặc tả SRS mới" mermaidId="n:E" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Đặc tả SRS mới" id="WAg_OfFaASlJwUKWobgR-6">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="170" x="16526" y="134" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Kiểm chứng và nộp bài" mermaidId="n:F" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Kiểm chứng và nộp bài" id="WAg_OfFaASlJwUKWobgR-7">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="225" x="24810" y="134" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Nhận diện lỗi theo IEEE 830-1998" mermaidId="n:B1" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Nhận diện lỗi theo IEEE 830-1998" id="WAg_OfFaASlJwUKWobgR-8">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="299" x="30" y="238" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Đánh giá Unambiguous" mermaidId="n:B2" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Đánh giá Unambiguous" id="WAg_OfFaASlJwUKWobgR-9">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="221" x="379" y="238" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Đánh giá Verifiable" mermaidId="n:B3" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Đánh giá Verifiable" id="WAg_OfFaASlJwUKWobgR-10">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="195" x="650" y="238" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Đánh giá Complete" mermaidId="n:B4" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Đánh giá Complete" id="WAg_OfFaASlJwUKWobgR-11">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="195" x="895" y="238" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Chuyển câu cảm tính thành yêu cầu định lượng" mermaidId="n:B5" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Chuyển câu cảm tính thành yêu cầu định lượng" id="WAg_OfFaASlJwUKWobgR-12">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="401" x="1140" y="238" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="RikkeiLogistics" mermaidId="n:C1" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="RikkeiLogistics" id="WAg_OfFaASlJwUKWobgR-13">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="164" x="1591" y="238" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Phân hệ tiếp nhận yêu cầu vận chuyển bưu kiện" mermaidId="n:C2" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Phân hệ tiếp nhận yêu cầu vận chuyển bưu kiện" id="WAg_OfFaASlJwUKWobgR-14">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="409" x="1469" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Bản thảo bị QA từ chối" mermaidId="n:C3" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Bản thảo bị QA từ chối" id="WAg_OfFaASlJwUKWobgR-15">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="225" x="1561" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Thiếu chỉ số kỹ thuật" mermaidId="n:C4" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Thiếu chỉ số kỹ thuật" id="WAg_OfFaASlJwUKWobgR-16">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="215" x="1434" y="550" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Đặt sai mục IEEE 830" mermaidId="n:C5" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Đặt sai mục IEEE 830" id="WAg_OfFaASlJwUKWobgR-17">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="211" x="1699" y="550" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Lỗi 1: Sai vị trí chương mục" mermaidId="n:D1" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Lỗi 1: Sai vị trí chương mục" id="WAg_OfFaASlJwUKWobgR-18">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="261" x="2299" y="238" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Lỗi 2: Không Unambiguous" mermaidId="n:D2" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Lỗi 2: Không Unambiguous" id="WAg_OfFaASlJwUKWobgR-19">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="249" x="3734" y="238" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Lỗi 3: Không Verifiable" mermaidId="n:D3" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Lỗi 3: Không Verifiable" id="WAg_OfFaASlJwUKWobgR-20">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="224" x="5397" y="238" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Lỗi 4: Không Complete" mermaidId="n:D4" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Lỗi 4: Không Complete" id="WAg_OfFaASlJwUKWobgR-21">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="223" x="7092" y="238" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Định nghĩa COD và bưu kiện hỏa tốc đặt tại 2.4 Constraints" mermaidId="n:D1a" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Định nghĩa COD và bưu kiện hỏa tốc đặt tại 2.4 Constraints" id="WAg_OfFaASlJwUKWobgR-22">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="488" x="1928" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Sửa: chuyển sang 1.3 Definitions" mermaidId="n:D1b" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Sửa: chuyển sang 1.3 Definitions" id="WAg_OfFaASlJwUKWobgR-23">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="295" x="2466" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Tiêu chí: không còn định nghĩa trong 2.4" mermaidId="n:D1c" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Tiêu chí: không còn định nghĩa trong 2.4" id="WAg_OfFaASlJwUKWobgR-24">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="349" x="2811" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="REQ-01: đẹp mắt, hài hòa, dễ dùng" mermaidId="n:D2a" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="REQ-01: đẹp mắt, hài hòa, dễ dùng" id="WAg_OfFaASlJwUKWobgR-25">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="315" x="3210" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="REQ-02: siêu nhanh, làm khách hài lòng" mermaidId="n:D2b" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="REQ-02: siêu nhanh, làm khách hài lòng" id="WAg_OfFaASlJwUKWobgR-26">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="344" x="3575" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="REQ-03: chuyển ngay đến kho đích" mermaidId="n:D2c" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="REQ-03: chuyển ngay đến kho đích" id="WAg_OfFaASlJwUKWobgR-27">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="309" x="3969" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="REQ-04: nếu thấy cần thiết" mermaidId="n:D2d" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="REQ-04: nếu thấy cần thiết" id="WAg_OfFaASlJwUKWobgR-28">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="258" x="4328" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Sửa: dùng điều kiện, ngưỡng và hành vi cụ thể" mermaidId="n:D2e" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Sửa: dùng điều kiện, ngưỡng và hành vi cụ thể" id="WAg_OfFaASlJwUKWobgR-29">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="399" x="4636" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Thiếu thời gian phản hồi" mermaidId="n:D3a" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Thiếu thời gian phản hồi" id="WAg_OfFaASlJwUKWobgR-30">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="238" x="5085" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Thiếu tải đồng thời" mermaidId="n:D3b" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Thiếu tải đồng thời" id="WAg_OfFaASlJwUKWobgR-31">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="201" x="5373" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Thiếu tiêu chí giao diện" mermaidId="n:D3c" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Thiếu tiêu chí giao diện" id="WAg_OfFaASlJwUKWobgR-32">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="231" x="5624" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Thiếu kết quả kiểm thử" mermaidId="n:D3d" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Thiếu kết quả kiểm thử" id="WAg_OfFaASlJwUKWobgR-33">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="232" x="5905" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Sửa: quy định giây, mili-giây, số lượng và tỷ lệ" mermaidId="n:D3e" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Sửa: quy định giây, mili-giây, số lượng và tỷ lệ" id="WAg_OfFaASlJwUKWobgR-34">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="395" x="6187" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Thiếu kiểm tra cân nặng và kích thước" mermaidId="n:D4a" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Thiếu kiểm tra cân nặng và kích thước" id="WAg_OfFaASlJwUKWobgR-35">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="340" x="6632" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Thiếu giới hạn tải trọng" mermaidId="n:D4b" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Thiếu giới hạn tải trọng" id="WAg_OfFaASlJwUKWobgR-36">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="234" x="7022" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Thiếu xử lý đường truyền chập chờn" mermaidId="n:D4c" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Thiếu xử lý đường truyền chập chờn" id="WAg_OfFaASlJwUKWobgR-37">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="325" x="7306" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Thiếu chống trùng mã vận đơn" mermaidId="n:D4d" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Thiếu chống trùng mã vận đơn" id="WAg_OfFaASlJwUKWobgR-38">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="281" x="7681" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Sửa: bổ sung validation và Idempotency Key" mermaidId="n:D4e" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Sửa: bổ sung validation và Idempotency Key" id="WAg_OfFaASlJwUKWobgR-39">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="377" x="8012" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="1.3 Definitions" mermaidId="n:E1" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="1.3 Definitions" id="WAg_OfFaASlJwUKWobgR-40">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="165" x="8630" y="238" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="2.4 Design Constraints" mermaidId="n:E2" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="2.4 Design Constraints" id="WAg_OfFaASlJwUKWobgR-41">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="219" x="9905" y="238" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="3.2 Functional Requirements" mermaidId="n:E3" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="3.2 Functional Requirements" id="WAg_OfFaASlJwUKWobgR-42">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="266" x="13537" y="238" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="3.3 Performance Requirements" mermaidId="n:E4" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="3.3 Performance Requirements" id="WAg_OfFaASlJwUKWobgR-43">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="281" x="18869" y="238" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="3.4 Usability Requirements" mermaidId="n:E5" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="3.4 Usability Requirements" id="WAg_OfFaASlJwUKWobgR-44">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="253" x="21582" y="238" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="3.5 Audit and Reliability Requirements" mermaidId="n:E6" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="3.5 Audit and Reliability Requirements" id="WAg_OfFaASlJwUKWobgR-45">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="335" x="23901" y="238" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="COD: Cash On Delivery, dịch vụ thu hộ tiền khi giao hàng" mermaidId="n:E1a" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="COD: Cash On Delivery, dịch vụ thu hộ tiền khi giao hàng" id="WAg_OfFaASlJwUKWobgR-46">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="468" x="8439" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Bưu kiện hỏa tốc: dịch vụ có SLA giao hàng được định nghĩa bằng thời hạn cụ thể" mermaidId="n:E1b" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Bưu kiện hỏa tốc: dịch vụ có SLA giao hàng được định nghĩa bằng thời hạn cụ thể" id="WAg_OfFaASlJwUKWobgR-47">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="651" x="8957" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Xe máy: tải trọng tối đa 50 kg" mermaidId="n:E2a" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Xe máy: tải trọng tối đa 50 kg" id="WAg_OfFaASlJwUKWobgR-48">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="277" x="9658" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Xe tải: tải trọng tối đa 500 kg" mermaidId="n:E2b" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Xe tải: tải trọng tối đa 500 kg" id="WAg_OfFaASlJwUKWobgR-49">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="277" x="9985" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Mã vận đơn phải duy nhất" mermaidId="n:E2c" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Mã vận đơn phải duy nhất" id="WAg_OfFaASlJwUKWobgR-50">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="248" x="10312" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Tạo đơn phải hỗ trợ Idempotency Key" mermaidId="n:E2d" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Tạo đơn phải hỗ trợ Idempotency Key" id="WAg_OfFaASlJwUKWobgR-51">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="334" x="10610" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="REQ-INTAKE-01: Kiểm tra dữ liệu đơn hàng" mermaidId="n:R1" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="REQ-INTAKE-01: Kiểm tra dữ liệu đơn hàng" id="WAg_OfFaASlJwUKWobgR-52">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="367" x="10994" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Cân nặng và kích thước phải lớn hơn 0" mermaidId="n:R1a" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Cân nặng và kích thước phải lớn hơn 0" id="WAg_OfFaASlJwUKWobgR-53">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="340" x="6004" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Tổng tải trọng không vượt 50 kg với xe máy" mermaidId="n:R1b" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Tổng tải trọng không vượt 50 kg với xe máy" id="WAg_OfFaASlJwUKWobgR-54">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="377" x="6394" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Tổng tải trọng không vượt 500 kg với xe tải" mermaidId="n:R1c" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Tổng tải trọng không vượt 500 kg với xe tải" id="WAg_OfFaASlJwUKWobgR-55">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="376" x="10725" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Nếu không hợp lệ, hiển thị lỗi cụ thể và không lưu đơn" mermaidId="n:R1d" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Nếu không hợp lệ, hiển thị lỗi cụ thể và không lưu đơn" id="WAg_OfFaASlJwUKWobgR-56">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="459" x="11151" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Kiểm chứng: nhập 0, số âm và giá trị vượt tải; hệ thống từ chối với thông báo tương ứng" mermaidId="n:R1e" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Kiểm chứng: nhập 0, số âm và giá trị vượt tải; hệ thống từ chối với thông báo tương ứng" id="WAg_OfFaASlJwUKWobgR-57">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="708" x="11660" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="REQ-INTAKE-02: Tạo đơn vận chuyển" mermaidId="n:R2" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="REQ-INTAKE-02: Tạo đơn vận chuyển" id="WAg_OfFaASlJwUKWobgR-58">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="324" x="13581" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Khi người dùng bấm Tạo đơn, hệ thống kiểm tra dữ liệu và tạo mã vận đơn" mermaidId="n:R2a" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Khi người dùng bấm Tạo đơn, hệ thống kiểm tra dữ liệu và tạo mã vận đơn" id="WAg_OfFaASlJwUKWobgR-59">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="607" x="12418" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Nếu tạo thành công, hiển thị mã vận đơn và trạng thái Đã tiếp nhận" mermaidId="n:R2b" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Nếu tạo thành công, hiển thị mã vận đơn và trạng thái Đã tiếp nhận" id="WAg_OfFaASlJwUKWobgR-60">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="554" x="13075" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Không khẳng định chuyển ngay đến kho đích nếu chưa hoàn tất xử lý logistics" mermaidId="n:R2c" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Không khẳng định chuyển ngay đến kho đích nếu chưa hoàn tất xử lý logistics" id="WAg_OfFaASlJwUKWobgR-61">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="620" x="13679" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Kiểm chứng: tạo đơn hợp lệ và xác nhận mã vận đơn cùng trạng thái được trả về" mermaidId="n:R2d" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Kiểm chứng: tạo đơn hợp lệ và xác nhận mã vận đơn cùng trạng thái được trả về" id="WAg_OfFaASlJwUKWobgR-62">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="650" x="14349" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="REQ-INTAKE-03: Chống tạo đơn trùng" mermaidId="n:R3" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="REQ-INTAKE-03: Chống tạo đơn trùng" id="WAg_OfFaASlJwUKWobgR-63">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="327" x="15904" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Client gửi Idempotency Key duy nhất cho mỗi thao tác tạo đơn" mermaidId="n:R3a" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Client gửi Idempotency Key duy nhất cho mỗi thao tác tạo đơn" id="WAg_OfFaASlJwUKWobgR-64">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="515" x="15049" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Các yêu cầu lặp lại cùng khóa phải trả về cùng kết quả" mermaidId="n:R3b" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Các yêu cầu lặp lại cùng khóa phải trả về cùng kết quả" id="WAg_OfFaASlJwUKWobgR-65">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="461" x="15614" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Hệ thống không tạo thêm mã vận đơn" mermaidId="n:R3c" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Hệ thống không tạo thêm mã vận đơn" id="WAg_OfFaASlJwUKWobgR-66">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="334" x="16125" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Kiểm chứng: gửi lại cùng yêu cầu 3 lần; chỉ tồn tại 1 đơn và 1 mã vận đơn" mermaidId="n:R3d" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Kiểm chứng: gửi lại cùng yêu cầu 3 lần; chỉ tồn tại 1 đơn và 1 mã vận đơn" id="WAg_OfFaASlJwUKWobgR-67">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="599" x="16509" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="PER-01: Tra cứu trạng thái" mermaidId="n:P1" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="PER-01: Tra cứu trạng thái" id="WAg_OfFaASlJwUKWobgR-68">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="251" x="17946" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="95 phần trăm yêu cầu phản hồi trong tối đa 2 giây" mermaidId="n:P1a" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="95 phần trăm yêu cầu phản hồi trong tối đa 2 giây" id="WAg_OfFaASlJwUKWobgR-69">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="424" x="17158" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="99 phần trăm yêu cầu phản hồi trong tối đa 5 giây" mermaidId="n:P1b" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="99 phần trăm yêu cầu phản hồi trong tối đa 5 giây" id="WAg_OfFaASlJwUKWobgR-70">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="424" x="17632" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Tải kiểm thử tối thiểu 100 yêu cầu đồng thời" mermaidId="n:P1c" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Tải kiểm thử tối thiểu 100 yêu cầu đồng thời" id="WAg_OfFaASlJwUKWobgR-71">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="388" x="18106" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Kiểm chứng: đo thời gian phản hồi dưới tải 100 yêu cầu đồng thời" mermaidId="n:P1d" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Kiểm chứng: đo thời gian phản hồi dưới tải 100 yêu cầu đồng thời" id="WAg_OfFaASlJwUKWobgR-72">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="540" x="18544" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="PER-02: Tạo đơn" mermaidId="n:P2" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="PER-02: Tạo đơn" id="WAg_OfFaASlJwUKWobgR-73">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="180" x="19780" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="95 phần trăm yêu cầu tạo đơn phản hồi trong tối đa 3 giây" mermaidId="n:P2a" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="95 phần trăm yêu cầu tạo đơn phản hồi trong tối đa 3 giây" id="WAg_OfFaASlJwUKWobgR-74">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="485" x="19134" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Hệ thống duy trì tính duy nhất của mã vận đơn" mermaidId="n:P2b" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Hệ thống duy trì tính duy nhất của mã vận đơn" id="WAg_OfFaASlJwUKWobgR-75">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="402" x="19669" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Kiểm chứng: kiểm thử tải và đối chiếu số đơn với số mã vận đơn" mermaidId="n:P2c" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Kiểm chứng: kiểm thử tải và đối chiếu số đơn với số mã vận đơn" id="WAg_OfFaASlJwUKWobgR-76">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="531" x="20121" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="USA-01: Giao diện tiếp nhận đơn" mermaidId="n:U1" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="USA-01: Giao diện tiếp nhận đơn" id="WAg_OfFaASlJwUKWobgR-77">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="297" x="21560" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Các trường bắt buộc phải có nhãn rõ ràng" mermaidId="n:U1a" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Các trường bắt buộc phải có nhãn rõ ràng" id="WAg_OfFaASlJwUKWobgR-78">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="363" x="20702" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Thông báo lỗi phải chỉ rõ trường, giá trị không hợp lệ và cách sửa" mermaidId="n:U1b" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Thông báo lỗi phải chỉ rõ trường, giá trị không hợp lệ và cách sửa" id="WAg_OfFaASlJwUKWobgR-79">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="535" x="21115" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Người dùng mới hoàn tất tạo đơn trong tối đa 3 phút ở 4 trên 5 lần thử" mermaidId="n:U1c" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Người dùng mới hoàn tất tạo đơn trong tối đa 3 phút ở 4 trên 5 lần thử" id="WAg_OfFaASlJwUKWobgR-80">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="578" x="21700" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Kiểm chứng: kiểm thử khả dụng với tối thiểu 5 người dùng đại diện" mermaidId="n:U1d" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Kiểm chứng: kiểm thử khả dụng với tối thiểu 5 người dùng đại diện" id="WAg_OfFaASlJwUKWobgR-81">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="552" x="22328" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="AUD-01: Nhật ký kiểm toán" mermaidId="n:A1" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="AUD-01: Nhật ký kiểm toán" id="WAg_OfFaASlJwUKWobgR-82">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="256" x="23941" y="342" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Ghi nhận tạo đơn, sửa đơn, hủy đơn và tra cứu trạng thái" mermaidId="n:A1a" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Ghi nhận tạo đơn, sửa đơn, hủy đơn và tra cứu trạng thái" id="WAg_OfFaASlJwUKWobgR-83">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="480" x="22930" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Mỗi bản ghi gồm người thực hiện, thời điểm, hành động, mã đơn và kết quả" mermaidId="n:A1b" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Mỗi bản ghi gồm người thực hiện, thời điểm, hành động, mã đơn và kết quả" id="WAg_OfFaASlJwUKWobgR-84">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="614" x="23460" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Nhật ký không được sửa hoặc xóa bởi người dùng nghiệp vụ" mermaidId="n:A1c" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Nhật ký không được sửa hoặc xóa bởi người dùng nghiệp vụ" id="WAg_OfFaASlJwUKWobgR-85">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="494" x="24124" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Kiểm chứng: thực hiện từng hành động và đối chiếu bản ghi đầy đủ" mermaidId="n:A1d" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Kiểm chứng: thực hiện từng hành động và đối chiếu bản ghi đầy đủ" id="WAg_OfFaASlJwUKWobgR-86">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="550" x="24668" y="446" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Bảng đối soát 4 lỗi IEEE 830" mermaidId="n:F1" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Bảng đối soát 4 lỗi IEEE 830" id="WAg_OfFaASlJwUKWobgR-87">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="260" x="24286" y="238" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Mỗi yêu cầu có mã định danh" mermaidId="n:F2" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Mỗi yêu cầu có mã định danh" id="WAg_OfFaASlJwUKWobgR-88">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="270" x="24596" y="238" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Mỗi yêu cầu có tiêu chí kiểm chứng ngay cạnh" mermaidId="n:F3" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Mỗi yêu cầu có tiêu chí kiểm chứng ngay cạnh" id="WAg_OfFaASlJwUKWobgR-89">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="394" x="24916" y="238" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Định dạng nộp: Markdown .md hoặc Word .docx" mermaidId="n:F4" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Định dạng nộp: Markdown .md hoặc Word .docx" id="WAg_OfFaASlJwUKWobgR-90">
+          <mxCell parent="WAg_OfFaASlJwUKWobgR-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="405" x="25360" y="238" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:A-&gt;B#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.56;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-91">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-2" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.56;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-3">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="501" y="109" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:A-&gt;C#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.57;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-92">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-2" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.57;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-4">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="1673" y="109" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:A-&gt;D#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-93">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-2" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-5">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:A-&gt;E#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.52;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-94">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-2" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.52;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-6">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="16611" y="109" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:A-&gt;F#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.52;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-95">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-2" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.52;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-7">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="24922" y="109" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:B-&gt;B1#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.69;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-96">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-3" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.69;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-8">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="180" y="213" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:B-&gt;B2#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.45;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-97">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-3" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.45;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-9">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="490" y="213" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:B-&gt;B3#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.74;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-98">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-3" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.74;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-10">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="748" y="213" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:B-&gt;B4#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.63;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-99">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-3" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.63;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-11">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="993" y="213" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:B-&gt;B5#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.57;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-100">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-3" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.57;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-12">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="1341" y="213" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:C-&gt;C1#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-101">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-4" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-13">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:C1-&gt;C2#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-102">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-13" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-14">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:C2-&gt;C3#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-103">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-14" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-15">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:C3-&gt;C4#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.2;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-104">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-15" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.2;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-16">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="1542" y="525" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:C3-&gt;C5#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.8;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-105">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-15" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.8;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-17">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="1805" y="525" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D-&gt;D1#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.54;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-106">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-5" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.54;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-18">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="2430" y="213" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D-&gt;D2#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.59;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-107">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-5" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.59;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-19">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="3859" y="213" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D-&gt;D3#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.59;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-108">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-5" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.59;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-20">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="5509" y="213" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D-&gt;D4#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.54;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-109">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-5" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.54;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-21">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="7204" y="213" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D1-&gt;D1a#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.98;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-110">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-18" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.98;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-22">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="2172" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D1-&gt;D1b#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.87;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-111">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-18" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.87;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-23">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="2613" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D1-&gt;D1c#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.72;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-112">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-18" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.72;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-24">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="2985" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D2-&gt;D2a#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.74;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-113">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-19" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.74;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-25">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="3367" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D2-&gt;D2b#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.27;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-114">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-19" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.27;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-26">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="3747" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D2-&gt;D2c#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.94;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-115">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-19" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.94;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-27">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="4123" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D2-&gt;D2d#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.7;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-116">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-19" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.7;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-28">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="4457" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D2-&gt;D2e#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.63;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-117">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-19" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.63;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-29">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="4835" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D3-&gt;D3a#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.85;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-118">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-20" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.85;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-30">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="5204" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D3-&gt;D3b#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.42;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-119">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-20" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.42;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-31">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="5473" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D3-&gt;D3c#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.96;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-120">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-20" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.96;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-32">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="5739" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D3-&gt;D3d#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.7;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-121">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-20" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.7;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-33">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="6021" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D3-&gt;D3e#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.63;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-122">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-20" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.63;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-34">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="6384" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D4-&gt;D4a#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.76;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-123">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-21" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.76;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-35">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="6802" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D4-&gt;D4b#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.35;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-124">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-21" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.35;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-36">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="7139" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D4-&gt;D4c#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.91;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-125">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-21" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.91;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-37">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="7468" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D4-&gt;D4d#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.67;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-126">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-21" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.67;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-38">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="7821" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:D4-&gt;D4e#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.61;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-127">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-21" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.61;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-39">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="8200" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:E-&gt;E1#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.52;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-128">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-6" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.52;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-40">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="8713" y="213" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:E-&gt;E2#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.52;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-129">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-6" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.52;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-41">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="10015" y="213" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:E-&gt;E3#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.54;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-130">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-6" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.54;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-42">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="13670" y="213" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:E-&gt;E4#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.54;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-131">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-6" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.54;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-43">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="19009" y="213" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:E-&gt;E5#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.52;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-132">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-6" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.52;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-44">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="21708" y="213" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:E-&gt;E6#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.52;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-133">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-6" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.52;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-45">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="24069" y="213" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:E1-&gt;E1a#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.38;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-134">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-40" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.38;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-46">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="8673" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:E1-&gt;E1b#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.65;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-135">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-40" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.65;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-47">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="9282" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:E2-&gt;E2a#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.98;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-136">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-41" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.98;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-48">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="9796" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:E2-&gt;E2b#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.76;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-137">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-41" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.76;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-49">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="10123" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:E2-&gt;E2c#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.76;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-138">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-41" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.76;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-50">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="10436" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:E2-&gt;E2d#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.63;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-139">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-41" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.63;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-51">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="10777" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:E3-&gt;R1#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.56;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-140">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-42" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.56;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-52">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="11177" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:R1-&gt;R1a#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.54;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-141">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-52" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.54;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-53">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="6174" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:R1-&gt;R1b#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.54;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-142">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-52" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.54;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-54">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="6582" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:R1-&gt;R1c#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.13;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-143">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-52" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.13;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-55">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="10913" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:R1-&gt;R1d#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.78;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-144">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-52" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.78;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-56">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="11380" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:R1-&gt;R1e#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.7;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-145">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-52" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.7;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-57">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="12014" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:E3-&gt;R2#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.64;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-146">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-42" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.64;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-58">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="13743" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:R2-&gt;R2a#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.65;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-147">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-58" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.65;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-59">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="12721" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:R2-&gt;R2b#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.91;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-148">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-58" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.91;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-60">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="13352" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:R2-&gt;R2c#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.89;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-149">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-58" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.89;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-61">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="13989" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:R2-&gt;R2d#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.67;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-150">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-58" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.67;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-62">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="14674" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:E3-&gt;R3#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.56;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-151">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-42" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.56;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-63">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="16068" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:R3-&gt;R3a#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.7;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-152">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-63" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.7;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-64">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="15306" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:R3-&gt;R3b#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.15;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-153">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-63" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.15;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-65">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="15844" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:R3-&gt;R3c#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.86;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-154">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-63" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.86;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-66">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="16292" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:R3-&gt;R3d#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.7;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-155">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-63" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.7;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-67">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="16808" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:E4-&gt;P1#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.65;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-156">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-43" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.65;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-68">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="18072" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:P1-&gt;P1a#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.67;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-157">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-68" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.67;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-69">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="17370" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:P1-&gt;P1b#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.03;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-158">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-68" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.03;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-70">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="17844" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:P1-&gt;P1c#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.97;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-159">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-68" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.97;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-71">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="18300" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:P1-&gt;P1d#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.67;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-160">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-68" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.67;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-72">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="18814" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:E4-&gt;P2#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.65;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-161">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-43" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.65;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-73">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="19870" y="317" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:P2-&gt;P2a#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.67;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-162">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-73" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.67;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-74">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="19376" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:P2-&gt;P2b#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-163">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-73" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-75">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:P2-&gt;P2c#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.67;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-164">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-73" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.67;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-76">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="20386" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:E5-&gt;U1#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-165">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-44" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-77">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:U1-&gt;U1a#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.67;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-166">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-77" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.67;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-78">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="20883" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:U1-&gt;U1b#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.94;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-167">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-77" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.94;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-79">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="21382" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:U1-&gt;U1c#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.99;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-168">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-77" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.99;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-80">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="21989" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:U1-&gt;U1d#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.67;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-169">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-77" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.67;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-81">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="22604" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:E6-&gt;A1#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-170">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-45" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-82">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:A1-&gt;A1a#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.63;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-171">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-82" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.63;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-83">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="23170" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:A1-&gt;A1b#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.91;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-172">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-82" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.91;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-84">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="23767" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:A1-&gt;A1c#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.91;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-173">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-82" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.91;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-85">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="24371" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:A1-&gt;A1d#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.65;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-174">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-82" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.65;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-86">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="24943" y="421" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:F-&gt;F1#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.72;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-175">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-7" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.72;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-87">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="24416" y="213" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:F-&gt;F2#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.06;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-176">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-7" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.06;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-88">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="24731" y="213" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:F-&gt;F3#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.94;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-177">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-7" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.94;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-89">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="25113" y="213" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:F-&gt;F4#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.67;entryX=0.5;entryY=0;" mermaidBaseValue="" id="WAg_OfFaASlJwUKWobgR-178">
+          <mxCell edge="1" parent="WAg_OfFaASlJwUKWobgR-1" source="WAg_OfFaASlJwUKWobgR-7" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.67;entryX=0.5;entryY=0;rounded=0;" target="WAg_OfFaASlJwUKWobgR-90">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="25563" y="213" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
